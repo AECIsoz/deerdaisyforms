@@ -1,0 +1,765 @@
+/* universal styles =====================================*/
+body {
+  background-color: #faf8eb;
+  box-sizing: border-box;
+}
+
+/* main container =======================================*/
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 230px;
+}
+
+h2 {
+  font-family: "Petit Formal Script", cursive;
+  font-weight: 400;
+  color: white;
+  text-align: right;
+}
+
+h4 {
+  font-family: "Petit Formal Script", cursive;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: black;
+  text-align: center;
+}
+
+.btn,
+.back-btn {
+  font-size: 1rem;
+  font-family: "Petit Formal Script", cursive;
+  font-weight: 700;
+  border-radius: 5px;
+  border: none;
+  height: 40px;
+  transition: all 0.5s ease-in;
+}
+
+.btn {
+  background-color: #004225;
+  color: white;
+  padding: 0 20px;
+  margin: 0px 20px 20px 20px;
+}
+
+.back-btn {
+  background-color: #fadcd9;
+}
+
+.btn-box {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.back-btn-box {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 60px 20px 0;
+}
+
+.btn:hover,
+.back-btn:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.btn:hover {
+  background-color: #42001d;
+}
+
+.back-btn:hover {
+  background-color: #004225;
+  color: white;
+}
+
+.tagline {
+  padding-right: 30px;
+  text-align: center;
+}
+
+.footnote {
+  font-size: 10px;
+  line-height: 1;
+}
+/* main container for smaller screens !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+@media only screen and (max-width: 1300px) {
+  .btn,
+  .back-btn {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .main-container {
+    margin-top: 130px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .btn,
+  .back-btn {
+    font-size: 0.7rem;
+  }
+}
+
+/*@media only screen and (max-width: 500px) {
+  .main-container {
+    margin-top: 130px;
+  }
+}*/
+
+/* main image section ===================================*/
+.main-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.home-image {
+  background-image: url("./resources/A_black_labrador_sits_quietly_by_the_fire_in_an_English_pub.webp");
+}
+.pub-image {
+  background-image: url("./resources/wine_and_beer_glass_and_crips_on_table_by_fire.webp");
+}
+.tea-image {
+  background-image: url("resources/Afternoon-tea-inspiration.webp");
+}
+
+.rental-image {
+  background-image: url("resources/annexe_exterior_8.webp");
+}
+
+.about-image {
+  background-image: url("./resources/about-image.webp");
+  background-position: center;
+}
+
+/* form styling ===================================================*/
+.form-container {
+  background-color: #faf8eb;
+  margin: 20px;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.form-field {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1.5px solid lightgrey;
+  border-radius: 5px;
+}
+
+.note {
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+select {
+  background-color: #faf8eb;
+  border: 1px solid lightgrey;
+  padding: 5px;
+  font-family: "Open sans", sans-serif;
+}
+
+label {
+  font-family: "Open sans", sans-serif;
+  font-size: 0.9rem;
+}
+
+textarea {
+  width: 50%;
+}
+/* =================================================================*/
+.gallery-background {
+  background-color: #42001d;
+  padding: 50px 20px;
+}
+.intro-container,
+.rental-container {
+  display: flex;
+}
+
+.intro-container .third {
+  width: 30%;
+}
+
+.intro-container .two-third {
+  width: 70%;
+}
+
+.intro-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  padding: 30px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  background-color: rgba(229, 224, 184, 0.85);
+  transition: background-color 0.5s ease-in;
+}
+.intro-text:hover {
+  background-color: rgba(229, 224, 184, 0.8);
+}
+h3 {
+  color: black;
+  font-family: "Palatino", serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 1.4rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.intro-text a {
+  color: black;
+}
+p,
+.email {
+  color: black;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 0;
+}
+
+/*main image section for smallerscreens !!!!!!!!!!!!!!!!!!!!!!!!*/
+@media only screen and (max-width: 900px) {
+  body {
+    margin: 0;
+  }
+  .tagline {
+    display: none;
+  }
+  .main-image {
+    background-position: center;
+    background-attachment: scroll;
+    align-items: center;
+  }
+  h3 {
+    font-size: 1.4rem;
+  }
+
+  .intro-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .intro-container .two-thirds,
+  .intro-container .third {
+    width: 80%;
+  }
+
+  .intro-text {
+    margin: 30px;
+    justify-content: center;
+    width: 60%;
+  }
+  .intro-text p {
+    margin-bottom: 0;
+  }
+
+  .btn-box {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .btn,
+  .back-btn {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  h3 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  .intro-text p {
+    font-size: 0.9rem;
+    margin-bottom: 0.8rem;
+  }
+  .intro-text a {
+    font-size: 0.8rem;
+  }
+  .main-image {
+    align-items: center;
+  }
+  .intro-text {
+    justify-content: center;
+    padding: 10px;
+    width: 70%;
+    margin: 20px;
+    background-color: rgba(250, 248, 235, 0.8);
+  }
+  .intro-text:hover {
+    background-color: rgba(250, 248, 235, 0.9);
+  }
+
+  .btn {
+    margin-bottom: 10px;
+  }
+}
+
+/* separator section ======================================*/
+.separator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.line {
+  width: 40%;
+}
+.deer {
+  width: 10%;
+  text-align: center;
+}
+.deer img {
+  width: 50px;
+}
+
+/* products section ===================================*/
+.products {
+  display: flex;
+  margin-top: 40px;
+  justify-content: space-around;
+}
+
+.info-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 28%;
+  height: 350px;
+}
+
+.info-text,
+.rental-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  line-height: 1.3rem;
+  background-color: rgba(255, 255, 255, 0.479);
+  transition: background-color 1s;
+}
+
+.rental-text h3,
+.rental-text p {
+  color: white;
+  padding: 5px;
+  text-align: center;
+}
+
+.info-text:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.rental-text:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.info-text a,
+.rental-text a {
+  color: black;
+  text-decoration: none;
+  transition: font-style 1.2s ease-in;
+  padding: 5px;
+}
+
+.btn a {
+  text-decoration: none;
+  color: white;
+}
+.info-text a:hover,
+.rental-text a:hover {
+  font-style: italic;
+}
+.info-text p,
+.info-text h3 {
+  color: black;
+  margin: 0;
+  padding: 5px;
+  text-align: center;
+}
+.pub {
+  background-image: url("./resources/Wine\ glasses\ hanging\ from\ the\ deck\ over\ the\ bar.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.afternoon-tea {
+  background-image: url("./resources/Afternoon-tea-inspiration.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.semesterbostad {
+  background-image: url("./resources/annexe_exterior_1.JPG");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.rental-one {
+  background-image: url("./resources/Christmas_1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.rental-two {
+  background-image: url("./resources/Christmas_15.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.rental-three {
+  background-image: url("./resources/Christmas_8.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* product section for smaller screens !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+@media only screen and (max-width: 900px) {
+  .products,
+  .rental-container/*,
+  .gallery-container*/ {
+    flex-direction: column;
+    align-items: center;
+  }
+  .info-box,
+  .rental-box {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .info-text,
+  .rental-item/*,
+  .gallery-item*/ {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .info-text p {
+    font: 0.9rem;
+  }
+  .info-text h3 {
+    font-size: 1.2rem;
+  }
+  .pub {
+    background-position: center;
+  }
+  .bed-breakfast {
+    background-position: right;
+  }
+}
+
+/* CONTACT PAGE STYLES ============================*/
+#margin-contact {
+  height: 180px;
+}
+iframe #form-heading-00000002-acc {
+  font-family: "Castellar", sans-serif;
+  font-weight: 300;
+}
+
+/* about us page styles ================================*/
+.content-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  box-sizing: border-box;
+}
+.content-square {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding: 30px;
+  border: 30px solid;
+  border-image: url("./resources/border.PNG") 30 round;
+}
+.content-square p {
+  font-size: 0.9rem;
+}
+.content-square img {
+  max-width: 300px;
+  align-self: center;
+}
+/* about us page for smaller screens !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+@media only screen and (max-width: 900px) {
+  .content-container {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 0;
+  }
+  .content-square {
+    width: 80%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .content-square p {
+    font-size: 0.7rem;
+  }
+}
+
+/* afternoon tea page styles ============================*/
+.tea-square {
+  width: 35%;
+  line-height: 0.9rem;
+}
+.afternoon-tea-menu {
+  background-image: url("resources/afternoon-tes.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.full-breakfast {
+  background-image: url("resources/breakfast.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.tea-square .info-text {
+  background-color: rgba(250, 248, 235, 0.8);
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.tea-square .info-text a {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* afternoon tea page styles for smaller screens !!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+@media only screen and (max-width: 1100px) {
+  .tea-square h3 {
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .tea-square {
+    margin-bottom: 20px;
+    width: 80%;
+  }
+
+  .tea-square h3 {
+    line-height: 1.8rem;
+  }
+}
+
+/* pub page styles =====================================================*/
+.interest-instructions {
+  background-image: url("./resources/pint_on_counter.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.interest-form {
+  height: 500px;
+}
+
+/* rental page styles ==========================================*/
+.rental-box {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+  align-items: center;
+  width: 30%;
+  /*background-color: #42001d;*/
+}
+
+.rental-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  padding: 0 30px;
+}
+
+.rental-item {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  padding: 40px 0;
+}
+
+.rental-item img,
+.gallery-item img {
+  border: 2px solid #eeeeee;
+  transition: all 0.5s ease-in;
+}
+
+.rental-item img {
+  width: 200px;
+}
+
+.rental-item img:hover {
+  transform: scale(1.2);
+  box-shadow: 5px 5px 20px #9a9797;
+}
+
+div.email > span:nth-child(2) {
+  display: none;
+}
+
+@media only screen and (max-width: 900px) {
+  .rental-box {
+    width: 100%;
+  }
+
+  .rental-box img,
+  .rental-container img {
+    width: 100%;
+  }
+
+  .rental-container {
+    width: 80%;
+  }
+  /*.rental-box {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    padding: 0;
+  }
+
+  .rental-item img {
+    width: 140px;
+  }
+
+  .rental-container {
+    width: 80%;
+  }
+
+  .rental-item img:hover {
+    transform: scale(2);
+  }*/
+}
+
+@media only screen and (max-width: 700px) {
+  .btn {
+    margin: 0 10px;
+    height: 60px;
+  }
+  .btn a {
+    font-family: "Open sans", sans-serif;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+  }
+  /*.rental-item img {
+    width: 80px;
+  }
+
+  .rental-container {
+    width: 80%;
+  }*/
+}
+
+/* gallery page styles ===========================================*/
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: #42001d;
+}
+.gallery-item {
+  display: flex;
+  padding: 20px;
+}
+
+.gallery-item img {
+  width: 200px;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.5);
+}
+
+/* gallery page for smaller screens ===========================*/
+
+/* memory page ==============================================*/
+.memory-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+#grid-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 100px;
+  background-color: rgb(50, 59, 78);
+}
+.back-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/memory-images/memory-bauble.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100px;
+  height: 100px;
+}
+
+.back-icon a {
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: white;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 500px;
+}
+
+@media screen and (max-width: 500px) {
+  .grid {
+    width: 300px;
+    justify-content: center;
+  }
+}
+
+.grid-image {
+  padding: 5px;
+}
+
+.grid img {
+  height: 100px;
+  width: 100px;
+}
+
+@media screen and (max-width: 500px) {
+  .grid img {
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+}
+
+.result-div {
+  margin: 20px 0;
+}
