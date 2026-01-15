@@ -257,7 +257,7 @@ class Header extends HTMLElement {
                 </div>
                 <h1 class="heading">The Deer & Daisy</h1>
                 <ul class="menu-items">
-                    <li><a href="https://www.deerdaisyinn.com/home.html">Tillbaka till hemsidan</a></li>
+                    <li><a href="https://www.deerdaisyinn.com/index.html">Tillbaka till hemsidan</a></li>
                     <li><a href="index.html">Svenska / </a><a href="index_eng.html">English</a></li>
                 </ul>
             </div>
@@ -278,7 +278,7 @@ class Header extends HTMLElement {
                 <span></span>
                 </label>
                 <ul class= "menu">
-                    <li><a href="https://www.deerdaisyinn.com/home.html">Tillbaka till hemsidan</a></li>
+                    <li><a href="https://www.deerdaisyinn.com/index.html">Tillbaka till hemsidan</a></li>
                     <li><a href="index.html">Svenska / </a><a href="index_eng.html">English</a></li>
                 </ul>
             </div>

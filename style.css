@@ -19,6 +19,10 @@ h2 {
   text-align: right;
 }
 
+.form-container h2 {
+  color: black;
+}
+
 h4 {
   font-family: "Petit Formal Script", cursive;
   font-size: 1.2rem;
@@ -140,6 +144,15 @@ h4 {
   background-position: center;
 }
 
+.contact-image {
+  background-image: url("./resources/contact.webp");
+  background-position: center;
+}
+
+.breakfast-image {
+  background-image: url("./resources/sparkling_fire.webp");
+  background-position: center;
+}
 /* form styling ===================================================*/
 .form-container,
 .success-container {
@@ -173,10 +186,6 @@ label {
   font-size: 0.9rem;
 }
 
-/*textarea {
-  width: 50%;
-}*/
-
 .success-container {
   width: 40%;
 }
@@ -193,6 +202,7 @@ label {
 .field-height {
   height: 24px;
 }
+
 /* =================================================================*/
 .gallery-background {
   background-color: #42001d;

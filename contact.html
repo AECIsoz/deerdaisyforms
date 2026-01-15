@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Här hittar du bokningsformulär till de olika erbjudandena hos The Deer & Daisy."
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Open+Sans+Condensed:wght@300&family=Oswald:wght@200;400&family=Petit+Formal+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="./resources/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+    <script src="./components/header.js" type="text/javascript" async></script>
+    <script src="./components/footer.js" type="text/javascript" defer></script>
+    <title>Kontakta The Deer & Daisy</title>
+  </head>
+  <body>
+    <!-- top navigation =========================================================-->
+    <header>
+      <header-component></header-component>
+    </header>
+
+    <!-- Main section ==========================================================-->
+    <section>
+      <div class="main-container">
+        <article class="main-image contact-image">
+          <div class="form-container">
+            <h2 class="tagline">Kontaktformulär</h2>
+            <form name="contact" method="POST" action="/contactsuccess" netlify>
+              <div class="form-field">
+                <h3>Ditt namn</h3>
+                <input
+                  type="text"
+                  name="namn"
+                  size="40"
+                  class="field-height"
+                  required
+                />
+              </div>
+              <div class="form-field">
+                <h3>Din epostadress</h3>
+                <input
+                  type="email"
+                  name="epost"
+                  size="40"
+                  class="field-height"
+                  required
+                />
+              </div>
+              <div class="form-field">
+                <h3>Ditt telefonnummer</h3>
+                <input
+                  type="text"
+                  name="telefon"
+                  size="40"
+                  class="field-height"
+                  required
+                />
+              </div>
+              <div class="form-field">
+                <h3>Ditt meddelande</h3>
+                <textarea name="upplysning" cols="42"></textarea>
+              </div>
+              <p>
+                <button type="submit" class="btn">Skicka</button>
+              </p>
+            </form>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- footer ================================================================-->
+    <footer>
+      <footer-component></footer-component>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/a101703e57.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
