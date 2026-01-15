@@ -141,7 +141,8 @@ h4 {
 }
 
 /* form styling ===================================================*/
-.form-container {
+.form-container,
+.success-container {
   background-color: #faf8eb;
   margin: 20px;
   padding: 40px;
@@ -172,8 +173,25 @@ label {
   font-size: 0.9rem;
 }
 
-textarea {
+/*textarea {
   width: 50%;
+}*/
+
+.success-container {
+  width: 40%;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-column div {
+  margin: 5px;
+}
+
+.field-height {
+  height: 24px;
 }
 /* =================================================================*/
 .gallery-background {
