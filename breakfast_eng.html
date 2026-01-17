@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Detta är ett bokningsformulär för Afternoon Tea på The Deer & Daisy."
+      content="This is a booking form for breakfast at The Deer & Daisy."
     />
     <link rel="stylesheet" href="./style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,9 +19,17 @@
       href="./resources/favicon/favicon.ico"
       type="image/x-icon"
     />
-    <script src="./components/header.js" type="text/javascript" async></script>
-    <script src="./components/footer.js" type="text/javascript" defer></script>
-    <title>Förfrågan Afternoon Tea</title>
+    <script
+      src="./components/header_eng.js"
+      type="text/javascript"
+      async
+    ></script>
+    <script
+      src="./components/footer_eng.js"
+      type="text/javascript"
+      defer
+    ></script>
+    <title>Booking request English Breakfast</title>
   </head>
   <body>
     <!-- top navigation =========================================================-->
@@ -32,17 +40,17 @@
     <!-- Main section ==========================================================-->
     <section>
       <div class="main-container">
-        <article class="main-image tea-image">
+        <article class="main-image breakfast-image">
           <div class="form-container">
-            <h2 class="tagline">Bokningsförfrågan för Afternoon Tea</h2>
-            <form name="afternoontea" method="POST" action="/success" netlify>
+            <h2 class="tagline">Booking request English Breakfast</h2>
+            <form name="breakfast" method="POST" action="/success" netlify>
               <div class="form-field">
-                <h3 for="datum">När vill ni komma?</h3>
+                <h3 for="datum">When would you like to come?</h3>
 
                 <div class="flex-column">
                   <div>
                     <input type="radio" id="01-17" name="datum" value="01-17" />
-                    <label for="01-17">Lördag 17 januari</label>
+                    <label for="01-17">Saturday 17 January</label>
                   </div>
                   <div>
                     <input
@@ -51,7 +59,7 @@
                       name=" datum"
                       value="01-18"
                     />
-                    <label for="01-18">Söndag 18 januari</label>
+                    <label for="01-18">Sunday 18 January</label>
                   </div>
                   <div>
                     <input
@@ -60,7 +68,7 @@
                       name=" datum"
                       value="01-24"
                     />
-                    <label for="01-24">Lördag 24 januari</label>
+                    <label for="01-24">Saturday 24 January</label>
                   </div>
                   <div>
                     <input
@@ -69,7 +77,7 @@
                       name=" datum"
                       value="01-25"
                     />
-                    <label for="01-25">Söndag 25 januari</label>
+                    <label for="01-25">Sunday 25 January</label>
                   </div>
                   <div>
                     <input
@@ -78,7 +86,7 @@
                       name=" datum"
                       value="01-31"
                     />
-                    <label for="01-31">Lördag 31 januari</label>
+                    <label for="01-31">Saturday 31 January</label>
                   </div>
                   <div>
                     <input
@@ -87,7 +95,7 @@
                       name=" datum"
                       value="02-01"
                     />
-                    <label for="02-01">Söndag 1 februari</label>
+                    <label for="02-01">Sunday 1 February</label>
                   </div>
                   <div>
                     <input
@@ -96,7 +104,7 @@
                       name=" datum"
                       value="02-07"
                     />
-                    <label for="02-07">Lördag 7 februari</label>
+                    <label for="02-07">Saturday 7 February</label>
                   </div>
                   <div>
                     <input
@@ -105,7 +113,7 @@
                       name=" datum"
                       value="02-08"
                     />
-                    <label for="02-08">Söndag 8 februari</label>
+                    <label for="02-08">Sunday 8 February</label>
                   </div>
                   <div>
                     <input
@@ -114,7 +122,7 @@
                       name=" datum"
                       value="02-14"
                     />
-                    <label for="02-14">Lördag 14 februari</label>
+                    <label for="02-14">Saturday 14 February</label>
                   </div>
                   <div>
                     <input
@@ -123,7 +131,7 @@
                       name=" datum"
                       value="02-15"
                     />
-                    <label for="02-15">Söndag 15 februari</label>
+                    <label for="02-15">Sunday 15 February</label>
                   </div>
                   <div>
                     <input
@@ -132,7 +140,7 @@
                       name=" datum"
                       value="02-21"
                     />
-                    <label for="02-21">Lördag 21 februari</label>
+                    <label for="02-21">Saturday 21 February</label>
                   </div>
                   <div>
                     <input
@@ -141,7 +149,7 @@
                       name=" datum"
                       value="02-22"
                     />
-                    <label for="02-22">Söndag 22 februari</label>
+                    <label for="02-22">Sunday 22 February</label>
                   </div>
                   <div>
                     <input
@@ -150,7 +158,7 @@
                       name=" datum"
                       value="02-28"
                     />
-                    <label for="02-28">Lördag 28 februari</label>
+                    <label for="02-28">Saturday 28 February</label>
                   </div>
                   <div>
                     <input
@@ -159,30 +167,26 @@
                       name=" datum"
                       value="03-01"
                     />
-                    <label for="03-01">Söndag 1 mars</label>
+                    <label for="03-01">Sunday 1 March</label>
                   </div>
                 </div>
               </div>
               <div class="form-field">
-                <h3>Och vilken tid?</h3>
-                <p class="note">Sittid är 90 minuter</p>
-                <input type="radio" id="13-30" name="tid" value="13-30" />
-                <label for="13-30">13:30</label>
-                <input type="radio" id="13-45" name="tid" value="13-45" />
-                <label for="13-45">13:45</label>
-                <input type="radio" id="14-00" name="tid" value="14-00" />
-                <label for="14-00">14:00</label>
-                <input type="radio" id="14-15" name="tid" value="14-15" />
-                <label for="14-15">14:15</label>
-                <input type="radio" id="14-30" name="tid" value="14-30" />
-                <label for="14-30">14:30</label>
-                <input type="radio" id="14-45" name="tid" value="14-45" />
-                <label for="14-45">14:45</label>
-                <input type="radio" id="15-00" name="tid" value="15-00" />
-                <label for="15-00">15:00</label>
+                <h3>And at what time?</h3>
+                <p class="note">The sitting is 90 minutes</p>
+                <input type="radio" id="9-30" name="tid" value="9-30" />
+                <label for="9-30">9:30</label>
+                <input type="radio" id="10-00" name="tid" value="10-00" />
+                <label for="10-00">10:00</label>
+                <input type="radio" id="10-30" name="tid" value="10-30" />
+                <label for="10-30">10:30</label>
+                <input type="radio" id="11-00" name="tid" value="11-00" />
+                <label for="11-00">11:00</label>
+                <input type="radio" id="11-30" name="tid" value="11-30" />
+                <label for="11-30">11:30</label>
               </div>
               <div class="form-field">
-                <h3>Hur många blir ni?</h3>
+                <h3>For how many people?</h3>
                 <input type="radio" id="one" name=" antal" value="one" />
                 <label for="one">1</label>
                 <input type="radio" id="two" name=" antal" value="two" />
@@ -201,15 +205,15 @@
                 <label for=" eight">8</label>
               </div>
               <div class="form-field">
-                <h3>Övriga upplysningar</h3>
+                <h3>Comments</h3>
                 <p class="note">
-                  Låt oss veta om någon i sällskapet har allergier eller vill ha
-                  ett vegetariskt alternativ.
+                  Let us know if someone in the group has an allergy or would
+                  like the vegetarian option.
                 </p>
                 <textarea name="upplysning" cols="42"></textarea>
               </div>
               <div class="form-field">
-                <h3>Ditt namn</h3>
+                <h3>Your name</h3>
                 <input
                   type="text"
                   name="namn"
@@ -219,7 +223,7 @@
                 />
               </div>
               <div class="form-field">
-                <h3>Din epostadress</h3>
+                <h3>Your email</h3>
                 <input
                   type="email"
                   name="epost"
@@ -229,7 +233,7 @@
                 />
               </div>
               <div class="form-field">
-                <h3>Ditt telefonnummer</h3>
+                <h3>Your phone number</h3>
                 <input
                   type="text"
                   name="telefon"
@@ -239,7 +243,7 @@
                 />
               </div>
               <p>
-                <button type="submit" class="btn">Skicka</button>
+                <button type="submit" class="btn">Send</button>
               </p>
             </form>
           </div>

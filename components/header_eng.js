@@ -243,12 +243,7 @@ class Header extends HTMLElement {
                 </div>
                 <h1 class="heading">The Deer & Daisy</h1>
                 <ul class="menu-items">
-                    <li><a href="home_eng.html">Home</a></li>
-                    <li><a href="index_eng.html">Afternoon Tea</a></li>
-                    <li><a href="rental_eng.html">The Annexe</a></li>
-                    <li><a href="pub_eng.html">Pub</a></li>
-                    <li><a href="about_us_eng.html">About us</a></li>
-                    <li><a href="contact_eng.html">Contact</a></li>
+                    <li><a href="https://www.deerdaisyinn.com/index_eng.html">Back to the Deer & Daisy website</a></li>
                     <li><a href="index.html">Svenska / </a><a href="index_eng.html">English</a></li>
                 </ul>
             </div>
@@ -269,12 +264,7 @@ class Header extends HTMLElement {
                 <span></span>
                 </label>
                 <ul class= "menu">
-                    <li><a href="home_eng.html">Home</a></li>
-                    <li><a href="index_eng.html">Afternoon Tea</a></li>
-                    <li><a href="rental_eng.html">The Annexe</a></li>
-                    <li><a href="pub_eng.html">Pub</a></li>
-                    <li><a href="about_us_eng.html">About us</a></li>
-                    <li><a href="contact_eng.html">Contact</a></li>
+                    <li><a href="https://www.deerdaisyinn.com/index_eng.html">Back to the Deer & Daisy website</a></li>
                     <li><a href="index.html">Svenska / </a><a href="index_eng.html">English</a></li>
                 </ul>
             </div>

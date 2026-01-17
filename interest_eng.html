@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Detta är ett kontaktformulär för The Deer & Daisy."
+      content="This is a form for registering an interest in the The Deer & Daisy."
     />
     <link rel="stylesheet" href="./style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,9 +19,17 @@
       href="./resources/favicon/favicon.ico"
       type="image/x-icon"
     />
-    <script src="./components/header.js" type="text/javascript" async></script>
-    <script src="./components/footer.js" type="text/javascript" defer></script>
-    <title>Kontakta The Deer & Daisy</title>
+    <script
+      src="./components/header_eng.js"
+      type="text/javascript"
+      async
+    ></script>
+    <script
+      src="./components/footer_eng.js"
+      type="text/javascript"
+      defer
+    ></script>
+    <title>Register your interest</title>
   </head>
   <body>
     <!-- top navigation =========================================================-->
@@ -32,12 +40,17 @@
     <!-- Main section ==========================================================-->
     <section>
       <div class="main-container">
-        <article class="main-image contact-image">
+        <article class="main-image pub-image">
           <div class="form-container">
-            <h2 class="tagline">Kontaktformulär</h2>
-            <form name="contact" method="POST" action="/contactsuccess" netlify>
+            <h2 class="tagline">Register your interest</h2>
+            <form
+              name="interest"
+              method="POST"
+              action="/interestsuccess.html"
+              netlify
+            >
               <div class="form-field">
-                <h3>Ditt namn</h3>
+                <h3>Your name</h3>
                 <input
                   type="text"
                   name="namn"
@@ -47,7 +60,7 @@
                 />
               </div>
               <div class="form-field">
-                <h3>Din epostadress</h3>
+                <h3>Your email</h3>
                 <input
                   type="email"
                   name="epost"
@@ -57,7 +70,11 @@
                 />
               </div>
               <div class="form-field">
-                <h3>Ditt telefonnummer</h3>
+                <h3>Your phone number</h3>
+                <p class="note">
+                  We always ask for two contact methods, but we will only use
+                  the phone number if the email address is not working.
+                </p>
                 <input
                   type="text"
                   name="telefon"
@@ -67,11 +84,29 @@
                 />
               </div>
               <div class="form-field">
-                <h3>Ditt meddelande</h3>
+                <h3>Your message</h3>
+                <p class="note">In case you would like to add something.</p>
                 <textarea name="upplysning" cols="42"></textarea>
               </div>
+              <div class="form-field">
+                <h3>Permission</h3>
+                <p class="note">
+                  I give my consent to your saving of my personal information so
+                  that you can send me a message when the pub opens.
+                </p>
+                <div>
+                  <input
+                    type="radio"
+                    id="ja"
+                    name="permission"
+                    value="ja"
+                    required
+                  />
+                  <label for="01-17">Yes</label>
+                </div>
+              </div>
               <p>
-                <button type="submit" class="btn">Skicka</button>
+                <button type="submit" class="btn">Send</button>
               </p>
             </form>
           </div>

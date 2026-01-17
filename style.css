@@ -211,6 +211,8 @@ label {
 .intro-container,
 .rental-container {
   display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .intro-container .third {
@@ -225,7 +227,7 @@ label {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 50%;
+  width: 40%;
   padding: 30px;
   margin-left: 30px;
   margin-bottom: 20px;
