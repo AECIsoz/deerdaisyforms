@@ -4,19 +4,19 @@ console.log(today);
 
 // set dates when tea is served
 let teaDates = [
-  ["Lördag", new Date("2026-01-24")],
-  ["Söndag", new Date("2026-01-25")],
-  ["Lördag", new Date("2026-01-31")],
-  ["Söndag", new Date("2026-02-01")],
-  ["Lördag", new Date("2026-02-07")],
-  ["Söndag", new Date("2026-02-08")],
-  ["Lördag", new Date("2026-02-14")],
-  ["Söndag", new Date("2026-02-15")],
-  ["Lördag", new Date("2026-02-21")],
-  ["Lördag", new Date("2026-01-18")],
-  ["Söndag", new Date("2026-02-22")],
-  ["Lördag", new Date("2026-02-28")],
-  ["Söndag", new Date("2026-03-01")],
+  ["Saturday", new Date("2026-01-24")],
+  ["Sunday", new Date("2026-01-25")],
+  ["Saturday", new Date("2026-01-31")],
+  ["Sunday", new Date("2026-02-01")],
+  ["Saturday", new Date("2026-02-07")],
+  ["Sunday", new Date("2026-02-08")],
+  ["Saturday", new Date("2026-02-14")],
+  ["Sunday", new Date("2026-02-15")],
+  ["Saturday", new Date("2026-02-21")],
+  ["Saturday", new Date("2026-01-18")],
+  ["Sunday", new Date("2026-02-22")],
+  ["Saturday", new Date("2026-02-28")],
+  ["Sunday", new Date("2026-03-01")],
 ];
 
 // push future dates to new array

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -38,163 +38,46 @@
             <form name="breakfast" method="POST" action="/success" netlify>
               <div class="form-field">
                 <h3 for="datum">När vill ni komma?</h3>
-
-                <div class="flex-column">
-                  <div>
-                    <input type="radio" id="01-17" name="datum" value="01-17" />
-                    <label for="01-17">Lördag 17 januari</label>
-                  </div>
-                  <div>
-                    <input
-                      type="radio"
-                      id="01-18"
-                      name=" datum"
-                      value="01-18"
-                    />
-                    <label for="01-18">Söndag 18 januari</label>
-                  </div>
-                  <div>
-                    <input
-                      type="radio"
-                      id="01-24"
-                      name=" datum"
-                      value="01-24"
-                    />
-                    <label for="01-24">Lördag 24 januari</label>
-                  </div>
-                  <div>
-                    <input
-                      type="radio"
-                      id="01-25"
-                      name=" datum"
-                      value="01-25"
-                    />
-                    <label for="01-25">Söndag 25 januari</label>
-                  </div>
-                  <div>
-                    <input
-                      type="radio"
-                      id="01-31"
-                      name=" datum"
-                      value="01-31"
-                    />
-                    <label for="01-31">Lördag 31 januari</label>
-                  </div>
-                  <div>
-                    <input
-                      type="radio"
-                      id="02-01"
-                      name=" datum"
-                      value="02-01"
-                    />
-                    <label for="02-01">Söndag 1 februari</label>
-                  </div>
-                  <div>
-                    <input
-                      type="radio"
-                      id="02-07"
-                      name=" datum"
-                      value="02-07"
-                    />
-                    <label for="02-07">Lördag 7 februari</label>
-                  </div>
-                  <div>
-                    <input
-                      type="radio"
-                      id="02-08"
-                      name=" datum"
-                      value="02-08"
-                    />
-                    <label for="02-08">Söndag 8 februari</label>
-                  </div>
-                  <div>
-                    <input
-                      type="radio"
-                      id="02-14"
-                      name=" datum"
-                      value="02-14"
-                    />
-                    <label for="02-14">Lördag 14 februari</label>
-                  </div>
-                  <div>
-                    <input
-                      type="radio"
-                      id="02-15"
-                      name=" datum"
-                      value="02-15"
-                    />
-                    <label for="02-15">Söndag 15 februari</label>
-                  </div>
-                  <div>
-                    <input
-                      type="radio"
-                      id="02-21"
-                      name=" datum"
-                      value="02-21"
-                    />
-                    <label for="02-21">Lördag 21 februari</label>
-                  </div>
-                  <div>
-                    <input
-                      type="radio"
-                      id="02-22"
-                      name=" datum"
-                      value="02-22"
-                    />
-                    <label for="02-22">Söndag 22 februari</label>
-                  </div>
-                  <div>
-                    <input
-                      type="radio"
-                      id="02-28"
-                      name=" datum"
-                      value="02-28"
-                    />
-                    <label for="02-28">Lördag 28 februari</label>
-                  </div>
-                  <div>
-                    <input
-                      type="radio"
-                      id="03-01"
-                      name=" datum"
-                      value="03-01"
-                    />
-                    <label for="03-01">Söndag 1 mars</label>
-                  </div>
-                </div>
+                <!-- inserting dates from js-->
+                <select name="datum" id="datum">
+                  <option value="välj-datum" default>Välj datum</option>
+                </select>
               </div>
               <div class="form-field">
                 <h3>Och vilken tid?</h3>
                 <p class="note">Sittid är 90 minuter</p>
-                <input type="radio" id="9-30" name="tid" value="9-30" />
-                <label for="9-30">9:30</label>
-                <input type="radio" id="10-00" name="tid" value="10-00" />
-                <label for="10-00">10:00</label>
-                <input type="radio" id="10-30" name="tid" value="10-30" />
-                <label for="10-30">10:30</label>
-                <input type="radio" id="11-00" name="tid" value="11-00" />
-                <label for="11-00">11:00</label>
-                <input type="radio" id="11-30" name="tid" value="11-30" />
-                <label for="11-30">11:30</label>
+                <select name="tid" id="tid" required>
+                  <option value="välj-tid" default>Välj tid</option>
+                  <option value="13:30">13:30</option>
+                  <option value="13:45">13:45</option>
+                  <option value="14:00">14:00</option>
+                  <option value="14:15">14:15</option>
+                  <option value="14:30">14:30</option>
+                  <option value="14:45">14:45</option>
+                  <option value="15:00">15:00</option>
+                </select>
               </div>
               <div class="form-field">
                 <h3>Hur många blir ni?</h3>
-                <input type="radio" id="one" name=" antal" value="one" />
-                <label for="one">1</label>
-                <input type="radio" id="two" name=" antal" value="two" />
-                <label for="two">2</label>
-                <input type="radio" id="three" name=" antal" value="three" />
-                <label for="three">3</label>
-                <input type="radio" id="four" name=" antal" value="four" />
-                <label for="four">4</label>
-                <input type="radio" id="five" name=" antal" value="five" />
-                <label for="five">5</label>
-                <input type="radio" id="six" name=" antal" value="six" />
-                <label for="six">6</label>
-                <input type="radio" id="seven" name=" antal" value="seven" />
-                <label for="seven">7</label>
-                <input type="radio" id=" eight" name=" antal" value=" eight" />
-                <label for=" eight">8</label>
+                <select name="antal" id="antal">
+                  <option value="välj-antal" default>Välj antal</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="more">Fler än 6</option>
+                </select>
+                <p class="note">
+                  Om ni blir fler än 6 personer, ange antal här:
+                </p>
+                <input
+                  type="text"
+                  name="antal-free"
+                  class="field-height"
+                  size="4"
+                />
               </div>
               <div class="form-field">
                 <h3>Övriga upplysningar</h3>
@@ -250,5 +133,6 @@
       src="https://kit.fontawesome.com/a101703e57.js"
       crossorigin="anonymous"
     ></script>
+    <script src="main.js"></script>
   </body>
 </html>

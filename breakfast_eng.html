@@ -51,163 +51,43 @@
             >
               <div class="form-field">
                 <h3 for="datum">When would you like to come?</h3>
-
-                <div class="flex-column">
-                  <div>
-                    <input type="radio" id="01-17" name="datum" value="01-17" />
-                    <label for="01-17">Saturday 17 January</label>
-                  </div>
-                  <div>
-                    <input
-                      type="radio"
-                      id="01-18"
-                      name=" datum"
-                      value="01-18"
-                    />
-                    <label for="01-18">Sunday 18 January</label>
-                  </div>
-                  <div>
-                    <input
-                      type="radio"
-                      id="01-24"
-                      name=" datum"
-                      value="01-24"
-                    />
-                    <label for="01-24">Saturday 24 January</label>
-                  </div>
-                  <div>
-                    <input
-                      type="radio"
-                      id="01-25"
-                      name=" datum"
-                      value="01-25"
-                    />
-                    <label for="01-25">Sunday 25 January</label>
-                  </div>
-                  <div>
-                    <input
-                      type="radio"
-                      id="01-31"
-                      name=" datum"
-                      value="01-31"
-                    />
-                    <label for="01-31">Saturday 31 January</label>
-                  </div>
-                  <div>
-                    <input
-                      type="radio"
-                      id="02-01"
-                      name=" datum"
-                      value="02-01"
-                    />
-                    <label for="02-01">Sunday 1 February</label>
-                  </div>
-                  <div>
-                    <input
-                      type="radio"
-                      id="02-07"
-                      name=" datum"
-                      value="02-07"
-                    />
-                    <label for="02-07">Saturday 7 February</label>
-                  </div>
-                  <div>
-                    <input
-                      type="radio"
-                      id="02-08"
-                      name=" datum"
-                      value="02-08"
-                    />
-                    <label for="02-08">Sunday 8 February</label>
-                  </div>
-                  <div>
-                    <input
-                      type="radio"
-                      id="02-14"
-                      name=" datum"
-                      value="02-14"
-                    />
-                    <label for="02-14">Saturday 14 February</label>
-                  </div>
-                  <div>
-                    <input
-                      type="radio"
-                      id="02-15"
-                      name=" datum"
-                      value="02-15"
-                    />
-                    <label for="02-15">Sunday 15 February</label>
-                  </div>
-                  <div>
-                    <input
-                      type="radio"
-                      id="02-21"
-                      name=" datum"
-                      value="02-21"
-                    />
-                    <label for="02-21">Saturday 21 February</label>
-                  </div>
-                  <div>
-                    <input
-                      type="radio"
-                      id="02-22"
-                      name=" datum"
-                      value="02-22"
-                    />
-                    <label for="02-22">Sunday 22 February</label>
-                  </div>
-                  <div>
-                    <input
-                      type="radio"
-                      id="02-28"
-                      name=" datum"
-                      value="02-28"
-                    />
-                    <label for="02-28">Saturday 28 February</label>
-                  </div>
-                  <div>
-                    <input
-                      type="radio"
-                      id="03-01"
-                      name=" datum"
-                      value="03-01"
-                    />
-                    <label for="03-01">Sunday 1 March</label>
-                  </div>
-                </div>
+                <select name="datum" id="datum">
+                  <option value="pick-datum" default>Pick a date</option>
+                </select>
               </div>
               <div class="form-field">
                 <h3>And at what time?</h3>
                 <p class="note">The sitting is 90 minutes</p>
-                <input type="radio" id="9-30" name="tid" value="9-30" />
-                <label for="9-30">9:30</label>
-                <input type="radio" id="10-00" name="tid" value="10-00" />
-                <label for="10-00">10:00</label>
-                <input type="radio" id="10-30" name="tid" value="10-30" />
-                <label for="10-30">10:30</label>
-                <input type="radio" id="11-00" name="tid" value="11-00" />
-                <label for="11-00">11:00</label>
-                <input type="radio" id="11-30" name="tid" value="11-30" />
-                <label for="11-30">11:30</label>
+                <select name="tid" id="tid" required>
+                  <option value="pick-tid" default>Pick a time</option>
+                  <option value="9:30">9:30</option>
+                  <option value="10:00">10:00</option>
+                  <option value="10:30">10:30</option>
+                  <option value="11:00">11:00</option>
+                  <option value="11:30">11:30</option>
+                </select>
               </div>
               <div class="form-field">
                 <h3>For how many people?</h3>
-                <input type="radio" id="one" name=" antal" value="one" />
-                <label for="one">1</label>
-                <input type="radio" id="two" name=" antal" value="two" />
-                <label for="two">2</label>
-                <input type="radio" id="three" name=" antal" value="three" />
-                <label for="three">3</label>
-                <input type="radio" id="four" name=" antal" value="four" />
-                <label for="four">4</label>
-                <input type="radio" id="five" name=" antal" value="five" />
-                <label for="five">5</label>
-                <input type="radio" id="six" name=" antal" value="six" />
-                <label for="six">6</label>
-                <input type="radio" id="seven" name=" antal" value="seven" />
-                <label for="seven">7</label>
-                <input type="radio" id=" eight" name=" antal" value=" eight" />
-                <label for=" eight">8</label>
+                <select name="antal" id="antal">
+                  <option value="pick-number" default>Pick a number</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="more">More than 6</option>
+                </select>
+                <p class="note">
+                  If more than 6 please indicate number of people:
+                </p>
+                <input
+                  type="text"
+                  name="antal-free"
+                  class="field-height"
+                  size="4"
+                />
               </div>
               <div class="form-field">
                 <h3>Comments</h3>
@@ -263,5 +143,6 @@
       src="https://kit.fontawesome.com/a101703e57.js"
       crossorigin="anonymous"
     ></script>
+    <script src="main_eng.js"></script>
   </body>
 </html>

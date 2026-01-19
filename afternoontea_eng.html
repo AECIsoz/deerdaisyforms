@@ -58,12 +58,15 @@
               <div class="form-field">
                 <h3 for="datum">When would you like to come?</h3>
                 <!-- inserting dates from js-->
-                <select name="datum" id="datum" required></select>
+                <select name="datum" id="datum" required>
+                  <option value="pick-datum" default>Pick a date</option>
+                </select>
               </div>
               <div class="form-field">
                 <h3>And at what time?</h3>
                 <p class="note">The sitting is 90 minutes</p>
                 <select name="tid" id="tid" required>
+                  <option value="pick-tid" default>Pick a time</option>
                   <option value="13:30">13:30</option>
                   <option value="13:45">13:45</option>
                   <option value="14:00">14:00</option>
@@ -75,7 +78,8 @@
               </div>
               <div class="form-field">
                 <h3>For how many people?</h3>
-                <select name="antal" id="antal">
+                <select name="antal" id="antal" required>
+                  <option value="pick-number" default>Pick a number</option>
                   <option value="1">1</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
@@ -148,6 +152,6 @@
       src="https://kit.fontawesome.com/a101703e57.js"
       crossorigin="anonymous"
     ></script>
-    <script src="main.js"></script>
+    <script src="main_eng.js"></script>
   </body>
 </html>
