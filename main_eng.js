@@ -4,17 +4,6 @@ console.log(today);
 
 // set dates when tea is served
 let teaDates = [
-  ["Saturday", new Date("2026-01-24")],
-  ["Sunday", new Date("2026-01-25")],
-  ["Saturday", new Date("2026-01-31")],
-  ["Sunday", new Date("2026-02-01")],
-  ["Saturday", new Date("2026-02-07")],
-  ["Sunday", new Date("2026-02-08")],
-  ["Saturday", new Date("2026-02-14")],
-  ["Sunday", new Date("2026-02-15")],
-  ["Saturday", new Date("2026-02-21")],
-  ["Saturday", new Date("2026-01-18")],
-  ["Sunday", new Date("2026-02-22")],
   ["Saturday", new Date("2026-02-28")],
   ["Sunday", new Date("2026-03-01")],
   ["Saturday", new Date("2026-03-07")],
@@ -24,6 +13,15 @@ let teaDates = [
   ["Sunday", new Date("2026-03-22")],
   ["Saturday", new Date("2026-03-28")],
   ["Sunday", new Date("2026-03-29")],
+  ["Saturday", new Date("2026-04-04")],
+  ["Sunday", new Date("2026-04-05")],
+  ["Monday", new Date("2026-04-06")],
+  ["Saturday", new Date("2026-04-11")],
+  ["Sunday", new Date("2026-04-12")],
+  ["Saturday", new Date("2026-04-18")],
+  ["Sunday", new Date("2026-04-19")],
+  ["Saturday", new Date("2026-04-25")],
+  ["Sunday", new Date("2026-04-26")],
 ];
 
 let breakfastDates = [
