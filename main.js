@@ -28,7 +28,6 @@ let breakfastDates = [
   ["Lördag", new Date("2026-02-21")],
   ["Söndag", new Date("2026-02-22")],
   ["Lördag", new Date("2026-02-28")],
-  ["Söndag", new Date("2026-03-01")],
   ["Lördag", new Date("2026-03-07")],
   ["Lördag", new Date("2026-03-14")],
   ["Söndag", new Date("2026-03-15")],
