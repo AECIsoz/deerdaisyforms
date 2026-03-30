@@ -13,6 +13,7 @@ let teaDates = [
   ["Söndag", new Date("2026-03-22")],
   ["Lördag", new Date("2026-03-28")],
   ["Söndag", new Date("2026-03-29")],
+  ["Fredag", new Date("2026-04-03")],
   ["Lördag", new Date("2026-04-04")],
   ["Söndag", new Date("2026-04-05")],
   ["Måndag", new Date("2026-04-06")],
