@@ -26,19 +26,6 @@ let teaDates = [
 ];
 
 let breakfastDates = [
-  ["Lördag", new Date("2026-02-21")],
-  ["Söndag", new Date("2026-02-22")],
-  ["Lördag", new Date("2026-02-28")],
-  ["Lördag", new Date("2026-03-07")],
-  ["Lördag", new Date("2026-03-14")],
-  ["Söndag", new Date("2026-03-15")],
-  ["Lördag", new Date("2026-03-21")],
-  ["Söndag", new Date("2026-03-22")],
-  ["Lördag", new Date("2026-03-28")],
-  ["Söndag", new Date("2026-03-29")],
-  ["Lördag", new Date("2026-04-04")],
-  ["Söndag", new Date("2026-04-05")],
-  ["Måndag", new Date("2026-04-06")],
   ["Lördag", new Date("2026-04-11")],
   ["Söndag", new Date("2026-04-12")],
   ["Lördag", new Date("2026-04-18")],
