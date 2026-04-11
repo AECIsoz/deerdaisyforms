@@ -7,12 +7,20 @@ let teaDates = [
   ["Sunday", new Date("2026-04-19")],
   ["Saturday", new Date("2026-04-25")],
   ["Sunday", new Date("2026-04-26")],
+  ["Saturday", new Date("2026-05-02")],
+  ["Sunday", new Date("2026-05-03")],
+  ["Saturday", new Date("2026-05-09")],
+  ["Sunday", new Date("2026-05-10")],
 ];
 
 let breakfastDates = [
   ["Sunday", new Date("2026-04-19")],
   ["Saturday", new Date("2026-04-25")],
   ["Sunday", new Date("2026-04-26")],
+  ["Saturday", new Date("2026-05-02")],
+  ["Sunday", new Date("2026-05-03")],
+  ["Saturday", new Date("2026-05-09")],
+  ["Sunday", new Date("2026-05-10")],
 ];
 
 if (
