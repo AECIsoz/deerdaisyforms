@@ -11,6 +11,9 @@ let teaDates = [
   ["Sunday", new Date("2026-05-03")],
   ["Saturday", new Date("2026-05-09")],
   ["Sunday", new Date("2026-05-10")],
+  ["Sunday", new Date("2026-05-17")],
+  ["Saturday", new Date("2026-05-30")],
+  ["Sunday", new Date("2026-05-31")],
 ];
 
 let breakfastDates = [
@@ -21,6 +24,9 @@ let breakfastDates = [
   ["Sunday", new Date("2026-05-03")],
   ["Saturday", new Date("2026-05-09")],
   ["Sunday", new Date("2026-05-10")],
+  ["Sunday", new Date("2026-05-17")],
+  ["Saturday", new Date("2026-05-30")],
+  ["Sunday", new Date("2026-05-31")],
 ];
 
 if (
