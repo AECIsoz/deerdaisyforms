@@ -26,14 +26,15 @@ let teaDates = [
   ["Lördag", new Date("2026-08-08")],
   ["Söndag", new Date("2026-08-09")],
 ];
-
+console.log(teaDates);
 let breakfastDates = [
   ["Lördag", new Date("2026-05-30")],
   ["Söndag", new Date("2026-05-31")],
 ];
 
 if (
-  window.location.href === "https://deerdaisyforms.netlify.app/afternoontea"
+  window.location.href === "https://deerdaisyforms.netlify.app/afternoontea" ||
+  window.location.href === "https://deerdaisyforms.netlify.app/takeaway"
 ) {
   // push future dates to new array
   let datesToCome = [];
