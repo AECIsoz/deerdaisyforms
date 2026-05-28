@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="This is a form for booking Afternoon Tea at The Deer & Daisy."
+      content="This is a form for ordering take away tea from The Deer & Daisy."
     />
     <link rel="stylesheet" href="./style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -35,7 +35,7 @@
       integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
       crossorigin="anonymous"
     ></script>
-    <title>Booking request Afternoon Tea</title>
+    <title>Order Take Away Tea</title>
   </head>
   <body>
     <!-- top navigation =========================================================-->
@@ -48,49 +48,23 @@
       <div class="main-container">
         <article class="main-image tea-image">
           <div class="form-container">
-            <h2 class="tagline">Booking request for Afternoon Tea</h2>
+            <h2 class="tagline">Take Away Tea order</h2>
             <form
-              name="takeaway_eng"
+              name="takeawaysuccess_eng"
               method="POST"
-              action="/success_eng"
+              action="/takeawaysuccess_eng.html"
               netlify
             >
               <div class="form-field">
-                <h3 for="datum">When would you like to come?</h3>
+                <h3 for="datum">When is do you want your order?</h3>
                 <!-- inserting dates from js-->
                 <select name="datum" id="datum" required>
                   <option value="pick-datum" default>Pick a date</option>
                 </select>
               </div>
               <div class="form-field">
-                <h3>And at what time?</h3>
-                <p class="note">The sitting is 90 minutes</p>
-                <select name="tid" id="tid" required>
-                  <option value="pick-tid" default>Pick a time</option>
-                  <option value="13:30">13:30</option>
-                  <option value="13:45">13:45</option>
-                  <option value="14:00">14:00</option>
-                  <option value="14:15">14:15</option>
-                  <option value="14:30">14:30</option>
-                  <option value="14:45">14:45</option>
-                  <option value="15:00">15:00</option>
-                </select>
-              </div>
-              <div class="form-field">
-                <h3>For how many people?</h3>
-                <select name="antal" id="antal" required>
-                  <option value="pick-number" default>Pick a number</option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                  <option value="6">6</option>
-                  <option value="more">More than 6</option>
-                </select>
-                <p class="note">
-                  If more than 6 please indicate number of people:
-                </p>
+                <h3>How many boxes?</h3>
+
                 <input
                   type="text"
                   name="antal-free"
@@ -100,10 +74,7 @@
               </div>
               <div class="form-field">
                 <h3>Comments</h3>
-                <p class="note">
-                  Let us know if someone in the group has an allergy or would
-                  like the vegetarian option.
-                </p>
+                <p class="note">Let us know of any allergies.</p>
                 <textarea name="upplysning" cols="42"></textarea>
               </div>
               <div class="form-field">
