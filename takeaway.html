@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Detta är ett bokningsformulär för Take away tea från på The Deer & Daisy."
+      content="Detta är ett bokningsformulär för Takeaway tea från på The Deer & Daisy."
     />
     <link rel="stylesheet" href="./style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,7 +21,7 @@
     />
     <script src="./components/header.js" type="text/javascript" async></script>
     <script src="./components/footer.js" type="text/javascript" defer></script>
-    <title>Beställning Take Away Tea</title>
+    <title>Beställning Takeaway Tea</title>
   </head>
   <body>
     <!-- top navigation =========================================================-->
@@ -34,7 +34,8 @@
       <div class="main-container">
         <article class="main-image tea-image">
           <div class="form-container">
-            <h2 class="tagline">Beställning av Take away tea</h2>
+            <h2 class="tagline">Beställning av Takeaway tea</h2>
+            <img class="form-img" src="/resources/takeaway_box.jpg" alt="" />
             <form
               name="takeaway"
               method="POST"
@@ -43,13 +44,31 @@
             >
               <div class="form-field">
                 <h3 for="datum">Vilket datum vill ni hämta?</h3>
-                <!-- inserting dates from js-->
-                <select name="datum" id="datum">
-                  <option value="välj-datum" default>Välj datum</option>
-                </select>
+                <input
+                  type="text"
+                  name="antal-free"
+                  class="field-height"
+                  size="10"
+                />
               </div>
               <div class="form-field">
-                <h3>Hur många?</h3>
+                <h3>Hur många Takeaway tea?</h3>
+                <p class="note">Scones, sylt, clotted cream och te/kaffe</p>
+                <p class="note">120 kr</p>
+                <input
+                  type="text"
+                  name="antal-free"
+                  class="field-height"
+                  size="4"
+                />
+              </div>
+              <div class="form-field">
+                <h3>Hur många Deluxe Takeaway tea?</h3>
+                <p class="note">
+                  Scones, sylt, clotted cream, mjuk kaka, parmesan shortbread
+                  och te/kaffe
+                </p>
+                <p class="note">165 kr</p>
                 <input
                   type="text"
                   name="antal-free"
@@ -59,11 +78,7 @@
               </div>
               <div class="form-field">
                 <h3>Övriga upplysningar</h3>
-                <p class="note">
-                  Skriv om ni vill lägga till mjuk kaka (30 kr) eller parmesan
-                  shortbread (20 kr), samt om vi behöver veta om några
-                  allergier.
-                </p>
+                <p class="note">Skriv om vi behöver veta om några allergier.</p>
                 <textarea name="upplysning" cols="42"></textarea>
               </div>
               <div class="form-field">

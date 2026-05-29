@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="This is a form for ordering take away tea from The Deer & Daisy."
+      content="This is a form for ordering Takeaway tea from The Deer & Daisy."
     />
     <link rel="stylesheet" href="./style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -35,7 +35,7 @@
       integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
       crossorigin="anonymous"
     ></script>
-    <title>Order Take Away Tea</title>
+    <title>Order Takeaway Tea</title>
   </head>
   <body>
     <!-- top navigation =========================================================-->
@@ -48,7 +48,9 @@
       <div class="main-container">
         <article class="main-image tea-image">
           <div class="form-container">
-            <h2 class="tagline">Take Away Tea order</h2>
+            <h2 class="tagline">Takeaway Tea order</h2>
+            <img class="form-img" src="/resources/takeaway_box.jpg" alt="" />
+            <p class="note">Deluxe Takeaway Tea</p>
             <form
               name="takeawaysuccess_eng"
               method="POST"
@@ -56,15 +58,32 @@
               netlify
             >
               <div class="form-field">
-                <h3 for="datum">When is do you want your order?</h3>
-                <!-- inserting dates from js-->
-                <select name="datum" id="datum" required>
-                  <option value="pick-datum" default>Pick a date</option>
-                </select>
+                <h3 for="datum">What date is your order for?</h3>
+                <input
+                  type="text"
+                  name="antal-free"
+                  class="field-height"
+                  size="10"
+                />
               </div>
               <div class="form-field">
-                <h3>How many boxes?</h3>
-
+                <h3>How many Takeaway tea?</h3>
+                <p class="note">Scones, jam, clotted cream and tea/coffee</p>
+                <p class="note">120 kr</p>
+                <input
+                  type="text"
+                  name="antal-free"
+                  class="field-height"
+                  size="4"
+                />
+              </div>
+              <div class="form-field">
+                <h3>How many Deluxe Takeaway tea?</h3>
+                <p class="note">
+                  Scones, jam, clotted cream, sponge cake, parmesan shortbread
+                  and tea/coffee
+                </p>
+                <p class="note">165 kr</p>
                 <input
                   type="text"
                   name="antal-free"
@@ -74,10 +93,7 @@
               </div>
               <div class="form-field">
                 <h3>Comments</h3>
-                <p class="note">
-                  Tell us if you want to add lemon drizzle cake (30 kr) and/or
-                  parmesan shortbread (20 kr) and let us know of any allergies.
-                </p>
+                <p class="note">Let us know of any allergies.</p>
                 <textarea name="upplysning" cols="42"></textarea>
               </div>
               <div class="form-field">

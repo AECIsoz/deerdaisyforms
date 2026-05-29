@@ -45,9 +45,7 @@ let breakfastDates = [
 ];
 
 if (
-  window.location.href ===
-    "https://deerdaisyforms.netlify.app/afternoontea_eng" ||
-  window.location.href === "https://deerdaisyforms.netlify.app/takeaway_eng"
+  window.location.href === "https://deerdaisyforms.netlify.app/afternoontea_eng"
 ) {
   // push future dates to new array
   let datesToCome = [];
