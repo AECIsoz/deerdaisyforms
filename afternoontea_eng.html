@@ -56,6 +56,15 @@
               netlify
             >
               <div class="form-field">
+                <h3>Would you like Afternoon Tea or Cream Tea?</h3>
+                <select name="menu" id="menu" required>
+                  <option value="pick-tea" default>Choose menu</option>
+                  <option value="afternoon">Afternoon Tea</option>
+                  <option value="cream">Cream Tea</option>
+                  <option value="cream:deluxe">Cream Tea Deluxe</option>
+                </select>
+              </div>
+              <div class="form-field">
                 <h3 for="datum">When would you like to come?</h3>
                 <!-- inserting dates from js-->
                 <select name="datum" id="datum" required>

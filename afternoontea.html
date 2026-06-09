@@ -21,7 +21,7 @@
     />
     <script src="./components/header.js" type="text/javascript" async></script>
     <script src="./components/footer.js" type="text/javascript" defer></script>
-    <title>Förfrågan Afternoon Tea</title>
+    <title>Förfrågan Afternoon Tea eller Cream Tea</title>
   </head>
   <body>
     <!-- top navigation =========================================================-->
@@ -34,8 +34,19 @@
       <div class="main-container">
         <article class="main-image tea-image">
           <div class="form-container">
-            <h2 class="tagline">Bokningsförfrågan för Afternoon Tea</h2>
+            <h2 class="tagline">
+              Bokningsförfrågan för Afternoon Tea eller Cream Tea
+            </h2>
             <form name="afternoontea" method="POST" action="/success" netlify>
+              <div class="form-field">
+                <h3>Gäller det Afternoon Tea eller Cream Tea</h3>
+                <select name="meny" id="meny" required>
+                  <option value="välj-tea" default>Välj meny</option>
+                  <option value="afternoon">Afternoon Tea</option>
+                  <option value="cream">Cream Tea</option>
+                  <option value="cream:deluxe">Cream Tea Deluxe</option>
+                </select>
+              </div>
               <div class="form-field">
                 <h3 for="datum">När vill ni komma?</h3>
                 <!-- inserting dates from js-->
