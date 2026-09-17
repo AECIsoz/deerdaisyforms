@@ -9,7 +9,7 @@ let teaDates = [
   ["Söndag", new Date("2026-10-11")],
   ["Lördag", new Date("2026-10-17")],
   ["Lördag", new Date("2026-10-24")],
-  ["Söndag", new Date("2026-11-01")],
+  ["Lördag", new Date("2026-10-31")],
   ["Söndag", new Date("2026-11-08")],
   ["Lördag", new Date("2026-11-21")],
 ];
@@ -18,7 +18,8 @@ let breakfastDates = [
   ["Lördag", new Date("2026-10-10")],
   ["Söndag", new Date("2026-10-18")],
   ["Söndag", new Date("2026-10-25")],
-  ["Lördag", new Date("2026-10-31")],
+
+  ["Söndag", new Date("2026-11-01")],
   ["Lördag", new Date("2026-11-07")],
   ["Söndag", new Date("2026-11-22")],
 ];
