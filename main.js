@@ -6,6 +6,7 @@ console.log(today);
 let teaDates = [
   ["Lördag", new Date("2026-10-03")],
   ["Söndag", new Date("2026-10-04")],
+  ["Måndag", new Date("2026-10-05")],
   ["Söndag", new Date("2026-10-11")],
   ["Lördag", new Date("2026-10-17")],
   ["Lördag", new Date("2026-10-24")],
