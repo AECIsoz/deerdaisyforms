@@ -13,14 +13,14 @@ let teaDates = [
   ["Lördag", new Date("2026-10-31")],
   ["Söndag", new Date("2026-11-08")],
   ["Lördag", new Date("2026-11-21")],
+  ["Lördag", new Date("2026-11-28")],
+  ["Söndag", new Date("2026-11-29")],
 ];
 console.log(teaDates);
 let breakfastDates = [
   ["Lördag", new Date("2026-10-10")],
   ["Söndag", new Date("2026-10-18")],
   ["Söndag", new Date("2026-10-25")],
-
-  ["Söndag", new Date("2026-11-01")],
   ["Lördag", new Date("2026-11-07")],
   ["Söndag", new Date("2026-11-22")],
 ];

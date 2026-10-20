@@ -13,13 +13,14 @@ let teaDates = [
   ["Saturday", new Date("2026-10-31")],
   ["Sunday", new Date("2026-11-08")],
   ["Saturday", new Date("2026-11-21")],
+  ["Saturday", new Date("2026-11-28")],
+  ["Sunday", new Date("2026-11-29")],
 ];
 
 let breakfastDates = [
   ["Saturday", new Date("2026-10-10")],
   ["Sunday", new Date("2026-10-18")],
   ["Sunday", new Date("2026-10-25")],
-  ["Sunday", new Date("2026-11-01")],
   ["Saturday", new Date("2026-11-07")],
   ["Sunday", new Date("2026-11-22")],
 ];
