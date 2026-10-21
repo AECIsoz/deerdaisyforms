@@ -173,11 +173,15 @@ h4 {
   border-radius: 5px;
 }
 
-.note {
+.note,
+.christmas-note {
   font-size: 0.8rem;
   font-style: italic;
 }
 
+.christmas-note {
+  margin-top: 10px;
+}
 select {
   background-color: #faf8eb;
   border: 1px solid lightgrey;

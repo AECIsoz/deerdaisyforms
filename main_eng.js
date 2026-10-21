@@ -15,6 +15,12 @@ let teaDates = [
   ["Saturday", new Date("2026-11-21")],
   ["Saturday", new Date("2026-11-28")],
   ["Sunday", new Date("2026-11-29")],
+  ["Saturday", new Date("2026-12-05")],
+  ["Sunday", new Date("2026-12-06")],
+  ["Saturday", new Date("2026-12-12")],
+  ["Sunday", new Date("2026-12-13")],
+  ["Tuesday", new Date("2026-12-29")],
+  ["Wednesday", new Date("2026-12-30")],
 ];
 
 let breakfastDates = [

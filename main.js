@@ -15,6 +15,12 @@ let teaDates = [
   ["Lördag", new Date("2026-11-21")],
   ["Lördag", new Date("2026-11-28")],
   ["Söndag", new Date("2026-11-29")],
+  ["Lördag", new Date("2026-12-05")],
+  ["Söndag", new Date("2026-12-06")],
+  ["Lördag", new Date("2026-12-12")],
+  ["Söndag", new Date("2026-12-13")],
+  ["Tisdag", new Date("2026-12-29")],
+  ["Onsdag", new Date("2026-12-30")],
 ];
 console.log(teaDates);
 let breakfastDates = [
@@ -62,6 +68,7 @@ if (
 
   for (let i = 0; i < breakfastDates.length; i++) {
     if (breakfastDates[i][1] > today) {
+      as;
       datesToCome.push(breakfastDates[i]);
     }
   }
