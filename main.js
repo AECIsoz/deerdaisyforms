@@ -68,7 +68,6 @@ if (
 
   for (let i = 0; i < breakfastDates.length; i++) {
     if (breakfastDates[i][1] > today) {
-      as;
       datesToCome.push(breakfastDates[i]);
     }
   }
